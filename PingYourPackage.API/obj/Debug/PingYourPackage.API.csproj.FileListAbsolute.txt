@@ -1,0 +1,16 @@
+E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.API\bin\Debug\PingYourPackage.API.dll.config
+E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.API\bin\Debug\PingYourPackage.API.dll
+E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.API\bin\Debug\PingYourPackage.API.pdb
+E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.API\bin\Debug\Autofac.dll
+E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.API\bin\Debug\Autofac.Integration.WebApi.dll
+E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.API\bin\Debug\Newtonsoft.Json.dll
+E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.API\bin\Debug\System.Net.Http.Formatting.dll
+E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.API\bin\Debug\System.Web.Http.dll
+E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.API\bin\Debug\Autofac.xml
+E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.API\bin\Debug\Autofac.Integration.WebApi.xml
+E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.API\bin\Debug\Newtonsoft.Json.xml
+E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.API\bin\Debug\System.Net.Http.Formatting.xml
+E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.API\bin\Debug\System.Web.Http.xml
+E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.API\obj\Debug\PingYourPackage.API.csprojResolveAssemblyReference.cache
+E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.API\obj\Debug\PingYourPackage.API.dll
+E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.API\obj\Debug\PingYourPackage.API.pdb

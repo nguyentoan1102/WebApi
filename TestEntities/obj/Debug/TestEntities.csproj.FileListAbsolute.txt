@@ -1,0 +1,10 @@
+E:\Project\PingYourPackge\PingYourPackage\TestEntities\bin\Debug\TestEntities.exe.config
+E:\Project\PingYourPackge\PingYourPackage\TestEntities\bin\Debug\TestEntities.exe
+E:\Project\PingYourPackge\PingYourPackage\TestEntities\bin\Debug\TestEntities.pdb
+E:\Project\PingYourPackge\PingYourPackage\TestEntities\bin\Debug\EntityFramework.dll
+E:\Project\PingYourPackge\PingYourPackage\TestEntities\bin\Debug\EntityFramework.SqlServer.dll
+E:\Project\PingYourPackge\PingYourPackage\TestEntities\bin\Debug\EntityFramework.xml
+E:\Project\PingYourPackge\PingYourPackage\TestEntities\bin\Debug\EntityFramework.SqlServer.xml
+E:\Project\PingYourPackge\PingYourPackage\TestEntities\obj\Debug\TestEntities.csprojResolveAssemblyReference.cache
+E:\Project\PingYourPackge\PingYourPackage\TestEntities\obj\Debug\TestEntities.exe
+E:\Project\PingYourPackge\PingYourPackage\TestEntities\obj\Debug\TestEntities.pdb

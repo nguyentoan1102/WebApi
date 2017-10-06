@@ -1,0 +1,12 @@
+E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.Domain\bin\Debug\PingYourPackage.Domain.dll.config
+E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.Domain\bin\Debug\PingYourPackage.Domain.dll
+E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.Domain\bin\Debug\PingYourPackage.Domain.pdb
+E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.Domain\bin\Debug\EntityFramework.dll
+E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.Domain\bin\Debug\EntityFramework.SqlServer.dll
+E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.Domain\bin\Debug\EntityFramework.xml
+E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.Domain\bin\Debug\EntityFramework.SqlServer.xml
+E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.Domain\obj\Debug\PingYourPackage.Domain.csprojResolveAssemblyReference.cache
+E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.Domain\obj\Debug\PingYourPackage.Domain.dll
+E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.Domain\obj\Debug\PingYourPackage.Domain.pdb
+E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.Domain\obj\Debug\PingYourPackage.Domain.Migrations.init.resources
+E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.Domain\obj\Debug\PingYourPackage.Domain.csproj.GenerateResource.Cache
