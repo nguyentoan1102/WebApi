@@ -2,6 +2,7 @@
 using Autofac.Integration.WebApi;
 using PingYourPackage.Domain.Entities.Core;
 using PingYourPackage.Domain.Entities.Extensions;
+using PingYourPackage.Domain.Services;
 using System.Data.Entity;
 using System.Reflection;
 using System.Runtime.Remoting.Contexts;
@@ -12,6 +13,8 @@ namespace PingYourPackage.API.Config
 {
     public class AutofacWebAPI
     {
+
+
         public static void Initialize(HttpConfiguration config)
         {
             Initialize(config, RegisterServices(new ContainerBuilder()));
@@ -35,7 +38,20 @@ namespace PingYourPackage.API.Config
                 .As(typeof(IEntityRepository<>))
                 .InstancePerApiRequest();
             // registration goes here
+
+            //Services
+            builder.RegisterType<CryptoService>()
+                .As<ICryptoService>()
+                .InstancePerApiRequest();
+            builder.RegisterType<MembershipService>()
+                .As<IMembershipService>()
+                .InstancePerApiRequest();
+            builder.RegisterType<ShipmentService>()
+                .As<IShipmentService>()
+                .InstancePerApiRequest();
             return builder.Build();
+
         }
+
     }
 }
