@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7DB21937-DC1E-4310-A7BA-34D3CBB09DCA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PingYourPackage.API.Model</RootNamespace>
+    <AssemblyName>PingYourPackage.API.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dtos\AffiliateDto.cs" />
+    <Compile Include="Dtos\AffiliateMemberInfoDto.cs" />
+    <Compile Include="Dtos\IDto.cs" />
+    <Compile Include="Dtos\IPaginatedDto.cs" />
+    <Compile Include="Dtos\PaginatedDto.cs" />
+    <Compile Include="Dtos\ShipmentTypeDto.cs" />
+    <Compile Include="Dtos\RoleDto.cs" />
+    <Compile Include="Dtos\ShipmentDto.cs" />
+    <Compile Include="Dtos\ShipmentStateDto.cs" />
+    <Compile Include="Dtos\UserDto.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RequestCommands\IRequestCommand.cs" />
+    <Compile Include="RequestCommands\PaginatedRequestCommand.cs" />
+    <Compile Include="RequestModels\AffiliateBaseRequestModel.cs" />
+    <Compile Include="RequestModels\AffiliateRequestModel.cs" />
+    <Compile Include="RequestModels\AffiliateUpdateRequestModel.cs" />
+    <Compile Include="RequestModels\ShipmentBaseRequestModel.cs" />
+    <Compile Include="RequestModels\ShipmentByAffiliateRequestModel.cs" />
+    <Compile Include="RequestModels\ShipmentByAffiliateUpdateRequestModel.cs" />
+    <Compile Include="RequestModels\ShipmentRequestModel.cs" />
+    <Compile Include="RequestModels\ShipmentStateRequestModel.cs" />
+    <Compile Include="RequestModels\ShipmentTypeRequestModel.cs" />
+    <Compile Include="RequestModels\ShipmentUpdateRequestModel.cs" />
+    <Compile Include="RequestModels\UserBAseRequestModel.cs" />
+    <Compile Include="RequestModels\UserRequestModel.cs" />
+    <Compile Include="RequestModels\UserUpdateRequestModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties1\" />
+    <Folder Include="Validation\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using PingYourPackage.API.MessageHandlers;
+using System.Linq;
 using System.Net.Http.Formatting;
 using System.Web.Http;
 using System.Web.Http.ModelBinding;
@@ -30,8 +31,12 @@ namespace PingYourPackage.API.Config
             excludeMatchOnTypeOnly: true));
             config.Services.RemoveAll(
             typeof(ModelValidatorProvider),
-            validator => !(validator
-            is DataAnnotationsModelValidatorProvider));
+            validator => !(validator is DataAnnotationsModelValidatorProvider));
+            // Message Handlers
+            config.MessageHandlers.Add(new RequireHttpsMessageHandler());
+
+            config.MessageHandlers.Add(new PingYourPackageAuthhandler());
+
         }
     }
 }

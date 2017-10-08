@@ -77,10 +77,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MessageHandlers\DelegatingHandlerExtensions.cs" />
+    <Compile Include="MessageHandlers\PingYourpackageAuthhandlerTest.cs" />
+    <Compile Include="MessageHandlers\RequireHttpsMessagehandlerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PingYourPackage.API\PingYourPackage.API.csproj">
+      <Project>{B65BD008-8A89-46BE-81F2-80F196419F42}</Project>
+      <Name>PingYourPackage.API</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
