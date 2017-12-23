@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PingYourPackage.API.Model.RequestCommands
 {
-    interface IRequestCommand
+    public interface IRequestCommand
     {
     }
 }

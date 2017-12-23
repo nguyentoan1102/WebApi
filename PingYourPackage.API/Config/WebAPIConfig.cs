@@ -1,16 +1,18 @@
 ﻿using PingYourPackage.API.MessageHandlers;
+using PingYourPackage.API.Model.RequestCommands;
 using System.Linq;
 using System.Net.Http.Formatting;
 using System.Web.Http;
 using System.Web.Http.ModelBinding;
 using System.Web.Http.Validation;
 using System.Web.Http.Validation.Providers;
+using WebApiDoodle.Web.Filters;
 
 namespace PingYourPackage.API.Config
 {
     public class WebAPIConfig
     {
-        public static void configure(HttpConfiguration config)
+        public static void Configure(HttpConfiguration config)
         {
             //Formatters
             var jqueryFormatter = config.Formatters.FirstOrDefault(
@@ -36,6 +38,10 @@ namespace PingYourPackage.API.Config
             config.MessageHandlers.Add(new RequireHttpsMessageHandler());
 
             config.MessageHandlers.Add(new PingYourPackageAuthhandler());
+
+            config.ParameterBindingRules.Insert(0, descriptor => typeof(IRequestCommand).IsAssignableFrom(descriptor.ParameterType) ? new FromUriAttribute().GetBinding(descriptor) : null);
+            //Filters
+            config.Filters.Add(new InvalidModelStateFilterAttribute());
 
         }
     }

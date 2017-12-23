@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PingYourPackage.API.Model.RequestModels
 {
-    class AffiliateUpdateRequestModel
+    public class AffiliateUpdateRequestModel : AffiliateBaseRequestModel
     {
     }
 }

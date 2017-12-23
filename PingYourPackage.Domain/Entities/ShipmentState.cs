@@ -1,9 +1,10 @@
-﻿using System;
+﻿using PingYourPackage.Domain.Entities.Core;
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace PingYourPackage.Domain.Entities
 {
-    public class ShipmentState
+    public class ShipmentState : IEntity
     {
         [Key]
         public Guid Key { get; set; }

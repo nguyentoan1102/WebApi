@@ -51,3 +51,9 @@ E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.Webhost\bin\EntityFram
 E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.Webhost\bin\EntityFramework.SqlServer.xml
 E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.Webhost\bin\Autofac.xml
 E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.Webhost\bin\Autofac.Integration.WebApi.xml
+E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.Webhost\bin\WebApiDoodle.Web.dll
+E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.Webhost\bin\PingYourPackage.API.Model.dll
+E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.Webhost\bin\WebApiDoodle.Web.Meta.dll
+E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.Webhost\bin\WebApiDoodle.Web.xml
+E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.Webhost\bin\PingYourPackage.API.Model.pdb
+E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.Webhost\bin\WebApiDoodle.Web.Meta.xml

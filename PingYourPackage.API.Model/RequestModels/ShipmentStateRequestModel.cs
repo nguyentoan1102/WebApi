@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace PingYourPackage.API.Model.RequestModels
 {
-    class ShipmentStateRequestModel
+    public class ShipmentStateRequestModel
     {
+        [Required]
+
+        public string ShipmentStatus { get; set; }
     }
 }

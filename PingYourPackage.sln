@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestEntities", "TestEntitie
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PingYourPackage.API.Model", "PingYourPackage.API.Model\PingYourPackage.API.Model.csproj", "{7DB21937-DC1E-4310-A7BA-34D3CBB09DCA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PingYourPackage.API.Test.Integration.cs", "PingYourPackage.API.Test.Integration.cs\PingYourPackage.API.Test.Integration.cs.csproj", "{640478BC-CDC9-4A01-99C1-3DA624531ADB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,11 +49,16 @@ Global
 		{7DB21937-DC1E-4310-A7BA-34D3CBB09DCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DB21937-DC1E-4310-A7BA-34D3CBB09DCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DB21937-DC1E-4310-A7BA-34D3CBB09DCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{640478BC-CDC9-4A01-99C1-3DA624531ADB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{640478BC-CDC9-4A01-99C1-3DA624531ADB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{640478BC-CDC9-4A01-99C1-3DA624531ADB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{640478BC-CDC9-4A01-99C1-3DA624531ADB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{803AEB96-6A6A-4C0B-87E0-7A6342C5E70F} = {E55F0C25-2E74-4EE7-B14F-F2C811B2508E}
+		{640478BC-CDC9-4A01-99C1-3DA624531ADB} = {E55F0C25-2E74-4EE7-B14F-F2C811B2508E}
 	EndGlobalSection
 EndGlobal

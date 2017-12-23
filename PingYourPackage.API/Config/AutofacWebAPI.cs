@@ -1,11 +1,8 @@
 ﻿using Autofac;
 using Autofac.Integration.WebApi;
 using PingYourPackage.Domain.Entities.Core;
-using PingYourPackage.Domain.Entities.Extensions;
 using System.Data.Entity;
 using System.Reflection;
-using System.Runtime.Remoting.Contexts;
-using System.Web.Configuration;
 using System.Web.Http;
 
 namespace PingYourPackage.API.Config

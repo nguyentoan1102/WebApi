@@ -56,9 +56,12 @@
     <Compile Include="Entities\Core\IEntityRepository.cs" />
     <Compile Include="Entities\Core\PaginatedList.cs" />
     <Compile Include="Entities\Core\PaginatedList1.cs" />
-    <Compile Include="Entities\Extensions\IentityRepository.cs" />
     <Compile Include="Entities\Extensions\RoleRepositoryExtensions.cs" />
     <Compile Include="Entities\Extensions\IQueryableExtensions.cs" />
+    <Compile Include="Entities\Extensions\ShipmentRepositoryExtensions.cs" />
+    <Compile Include="Entities\Extensions\ShipmentStateRepositoryExtensions.cs" />
+    <Compile Include="Entities\Extensions\ShipmentTypeRepositoryExtensions.cs" />
+    <Compile Include="Entities\Extensions\UserInRoleRepositoryExtensions.cs" />
     <Compile Include="Entities\Extensions\UserRepositoryExtensions.cs" />
     <Compile Include="Entities\Role.cs" />
     <Compile Include="Entities\Shipment.cs" />
@@ -85,10 +88,17 @@
     <Compile Include="Services\ValidUserContext.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\PingYourPackage.API.Model\PingYourPackage.API.Model.csproj">
+      <Project>{7DB21937-DC1E-4310-A7BA-34D3CBB09DCA}</Project>
+      <Name>PingYourPackage.API.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201710051524442_init.resx">
       <DependentUpon>201710051524442_init.cs</DependentUpon>

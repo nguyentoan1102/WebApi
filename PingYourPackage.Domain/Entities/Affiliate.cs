@@ -19,7 +19,7 @@ namespace PingYourPackage.Domain.Entities
         [StringLength(50)]
         public string TelephoneNumber { get; set; }
         [Required]
-        public DateTime CreateOn { get; set; }
+        public DateTime CreatedOn { get; set; }
         [Required]
         public User User { get; set; }
         public virtual ICollection<Shipment> Shipments { get; set; }

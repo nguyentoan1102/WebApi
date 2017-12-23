@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -63,13 +64,15 @@
     <Compile Include="RequestModels\ShipmentStateRequestModel.cs" />
     <Compile Include="RequestModels\ShipmentTypeRequestModel.cs" />
     <Compile Include="RequestModels\ShipmentUpdateRequestModel.cs" />
-    <Compile Include="RequestModels\UserBAseRequestModel.cs" />
+    <Compile Include="RequestModels\UserBaseRequestModel.cs" />
     <Compile Include="RequestModels\UserRequestModel.cs" />
     <Compile Include="RequestModels\UserUpdateRequestModel.cs" />
+    <Compile Include="Validation\OptionsAttribute.cs" />
+    <Compile Include="Validation\MinimumAttribute.cs" />
+    <Compile Include="Validation\MaximumAttribute.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties1\" />
-    <Folder Include="Validation\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

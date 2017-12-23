@@ -6,8 +6,9 @@ namespace PingYourPackage.API.Config
 {
     public class RouteConfig
     {
-        public static void RegisterRoutes(HttpRouteCollection routes)
+        public static void RegisterRoutes(HttpConfiguration config)
         {
+            var routes = config.Routes;
             routes.MapHttpRoute(
                 "DefaultHttpRoute",
                 "api/{controller}/{key}",

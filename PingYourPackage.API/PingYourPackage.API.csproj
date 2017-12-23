@@ -92,7 +92,7 @@
     <Compile Include="Config\SuppressedRequiredMemberSelector.cs" />
     <Compile Include="Config\WebAPIConfig.cs" />
     <Compile Include="Controllers\AffiliatesController .cs" />
-    <Compile Include="Controllers\ShipmentController .cs" />
+    <Compile Include="Controllers\ShipmentsController .cs" />
     <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Controllers\ShipmentTypesController .cs" />
     <Compile Include="Controllers\ShipmentStatesController.cs" />
@@ -102,6 +102,20 @@
     <Compile Include="Http\HttpRequestMessageExtensions.cs" />
     <Compile Include="MessageHandlers\PingYourPackageAuthhandler.cs" />
     <Compile Include="MessageHandlers\RquirehttpsMessagehandler.cs" />
+    <Compile Include="Model\AffiliateExtensions.cs" />
+    <Compile Include="Model\AffiliateRequestModelExtensions.cs" />
+    <Compile Include="Model\AffiliateUpdateRequestModelExtensions.cs" />
+    <Compile Include="Model\PaginatedListExtensions.cs" />
+    <Compile Include="Model\RoleExtensions.cs" />
+    <Compile Include="Model\ShipmentByAffiliateRequestModelExtensions.cs" />
+    <Compile Include="Model\ShipmentByAffiliateUpdateRequestModelExtensions.cs" />
+    <Compile Include="Model\ShipmentExtensions.cs" />
+    <Compile Include="Model\ShipmentRequestModelExtensions.cs" />
+    <Compile Include="Model\ShipmentStateExtensions.cs" />
+    <Compile Include="Model\ShipmentTypeExtensions.cs" />
+    <Compile Include="Model\ShipmentTypeRequestModelExtensions.cs" />
+    <Compile Include="Model\ShipmentUpdateRequestModelExtensions.cs" />
+    <Compile Include="Model\UserWithRolesExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -109,6 +123,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\PingYourPackage.API.Model\PingYourPackage.API.Model.csproj">
+      <Project>{7DB21937-DC1E-4310-A7BA-34D3CBB09DCA}</Project>
+      <Name>PingYourPackage.API.Model</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PingYourPackage.Domain\PingYourPackage.Domain.csproj">
       <Project>{5619B26F-663A-4A4B-8699-227B8EB6451E}</Project>
       <Name>PingYourPackage.Domain</Name>

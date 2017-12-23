@@ -10,3 +10,5 @@ E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.Domain\obj\Debug\PingY
 E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.Domain\obj\Debug\PingYourPackage.Domain.pdb
 E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.Domain\obj\Debug\PingYourPackage.Domain.Migrations.init.resources
 E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.Domain\obj\Debug\PingYourPackage.Domain.csproj.GenerateResource.Cache
+E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.Domain\bin\Debug\PingYourPackage.API.Model.dll
+E:\Project\PingYourPackge\PingYourPackage\PingYourPackage.Domain\bin\Debug\PingYourPackage.API.Model.pdb
