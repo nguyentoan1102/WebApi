@@ -1,9 +1,11 @@
 ﻿using PingYourPackage.Domain.Entities.Core;
 using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PingYourPackage.Domain.Entities
 {
+    [Table("ShipmentStates")]
     public class ShipmentState : IEntity
     {
         [Key]

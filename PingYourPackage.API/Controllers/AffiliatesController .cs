@@ -11,5 +11,6 @@ namespace PingYourPackage.API.Controllers
     [Authorize(Roles = "Admin,Employee")]
     public class AffiliatesController : ApiController
     {
+
     }
 }

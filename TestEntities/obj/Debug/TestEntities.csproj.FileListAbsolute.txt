@@ -8,3 +8,12 @@ E:\Project\PingYourPackge\PingYourPackage\TestEntities\bin\Debug\EntityFramework
 E:\Project\PingYourPackge\PingYourPackage\TestEntities\obj\Debug\TestEntities.csprojResolveAssemblyReference.cache
 E:\Project\PingYourPackge\PingYourPackage\TestEntities\obj\Debug\TestEntities.exe
 E:\Project\PingYourPackge\PingYourPackage\TestEntities\obj\Debug\TestEntities.pdb
+D:\ToanFile\ProASP\WebApi\TestEntities\bin\Debug\TestEntities.exe.config
+D:\ToanFile\ProASP\WebApi\TestEntities\bin\Debug\TestEntities.exe
+D:\ToanFile\ProASP\WebApi\TestEntities\bin\Debug\TestEntities.pdb
+D:\ToanFile\ProASP\WebApi\TestEntities\bin\Debug\EntityFramework.dll
+D:\ToanFile\ProASP\WebApi\TestEntities\bin\Debug\EntityFramework.SqlServer.dll
+D:\ToanFile\ProASP\WebApi\TestEntities\bin\Debug\EntityFramework.xml
+D:\ToanFile\ProASP\WebApi\TestEntities\bin\Debug\EntityFramework.SqlServer.xml
+D:\ToanFile\ProASP\WebApi\TestEntities\obj\Debug\TestEntities.exe
+D:\ToanFile\ProASP\WebApi\TestEntities\obj\Debug\TestEntities.pdb

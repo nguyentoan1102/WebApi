@@ -3,9 +3,11 @@ using PingYourPackage.Domain.Entities.Core;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PingYourPackage.Domain.Entities
 {
+    [Table("Affiliates")]
     public class Affiliate : IEntity
     {
         [Key]

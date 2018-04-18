@@ -55,7 +55,6 @@
     <Compile Include="Entities\Core\IEntity.cs" />
     <Compile Include="Entities\Core\IEntityRepository.cs" />
     <Compile Include="Entities\Core\PaginatedList.cs" />
-    <Compile Include="Entities\Core\PaginatedList1.cs" />
     <Compile Include="Entities\Extensions\RoleRepositoryExtensions.cs" />
     <Compile Include="Entities\Extensions\IQueryableExtensions.cs" />
     <Compile Include="Entities\Extensions\ShipmentRepositoryExtensions.cs" />
@@ -70,9 +69,13 @@
     <Compile Include="Entities\ShipmentType.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Entities\UserInRole.cs" />
-    <Compile Include="Migrations\201710051524442_init.cs" />
-    <Compile Include="Migrations\201710051524442_init.Designer.cs">
-      <DependentUpon>201710051524442_init.cs</DependentUpon>
+    <Compile Include="Migrations\201804180354431_InitialDB.cs" />
+    <Compile Include="Migrations\201804180354431_InitialDB.Designer.cs">
+      <DependentUpon>201804180354431_InitialDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804180356263_add_Data_For_Role.cs" />
+    <Compile Include="Migrations\201804180356263_add_Data_For_Role.Designer.cs">
+      <DependentUpon>201804180356263_add_Data_For_Role.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -100,8 +103,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201710051524442_init.resx">
-      <DependentUpon>201710051524442_init.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201804180354431_InitialDB.resx">
+      <DependentUpon>201804180354431_InitialDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804180356263_add_Data_For_Role.resx">
+      <DependentUpon>201804180356263_add_Data_For_Role.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

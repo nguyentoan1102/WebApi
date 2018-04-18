@@ -101,7 +101,7 @@
     <Compile Include="Controllers\AffiliateShipmentsController.cs" />
     <Compile Include="Http\HttpRequestMessageExtensions.cs" />
     <Compile Include="MessageHandlers\PingYourPackageAuthhandler.cs" />
-    <Compile Include="MessageHandlers\RquirehttpsMessagehandler.cs" />
+    <Compile Include="MessageHandlers\RquirehttpsMessageHandler.cs" />
     <Compile Include="Model\AffiliateExtensions.cs" />
     <Compile Include="Model\AffiliateRequestModelExtensions.cs" />
     <Compile Include="Model\AffiliateUpdateRequestModelExtensions.cs" />

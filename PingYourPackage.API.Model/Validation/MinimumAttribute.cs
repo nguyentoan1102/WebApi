@@ -21,12 +21,7 @@ namespace PingYourPackage.API.Model.Validation
             _minimumValue = minimum;
         }
 
-
-        public override string FormatErrorMessage(string name) => string.Format(
-            CultureInfo.CurrentCulture,
-            base.ErrorMessageString,
-            name,
-            _minimumValue);
+        public override string FormatErrorMessage(string name) => string.Format(CultureInfo.CurrentCulture, base.ErrorMessageString, name, _minimumValue);
 
         public override bool IsValid(object value)
         {

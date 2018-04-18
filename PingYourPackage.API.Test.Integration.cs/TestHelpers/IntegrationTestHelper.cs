@@ -1,6 +1,5 @@
 ﻿using Autofac;
 using PingYourPackage.API.Config;
-using PingYourPackage.API.Model.Dtos;
 using System;
 using System.Linq;
 using System.Net;
@@ -8,7 +7,6 @@ using System.Net.Http;
 using System.Reflection;
 using System.Threading.Tasks;
 using System.Web.Http;
-using WebApiDoodle.Net.Http.Client.Model;
 using Xunit;
 
 namespace PingYourPackage.API.Test.Integration.cs.TestHelpers
@@ -21,10 +19,10 @@ namespace PingYourPackage.API.Test.Integration.cs.TestHelpers
             for (int i = 0; i < count; i++)
             {
                 array[i] = Guid.NewGuid();
-
             }
             return array;
         }
+
         internal static HttpConfiguration GetInitialIntegrationTestConfig()
         {
             var config = new HttpConfiguration();
@@ -32,12 +30,14 @@ namespace PingYourPackage.API.Test.Integration.cs.TestHelpers
             WebAPIConfig.Configure(config);
             return config;
         }
+
         internal static HttpConfiguration GetInitialIntegrationTestConfig(IContainer container)
         {
             var config = GetInitialIntegrationTestConfig();
             AutofacWebAPI.Initialize(config, container);
             return config;
         }
+
         internal static ContainerBuilder GetEmptyContainerBuilder()
         {
             var builder = new ContainerBuilder();
@@ -45,6 +45,7 @@ namespace PingYourPackage.API.Test.Integration.cs.TestHelpers
             Assembly.GetAssembly(typeof(WebAPIConfig)));
             return builder;
         }
+
         internal static async Task<Model.Dtos.PaginatedDto<TDto>> TestForPaginatedDtoAsync<TDto>(
             HttpConfiguration config,
             HttpRequestMessage request,
@@ -55,7 +56,6 @@ namespace PingYourPackage.API.Test.Integration.cs.TestHelpers
             bool expectedHasNextPageResult,
             bool expectedHasPreviousPageResult) where TDto : Model.Dtos.IDto
         {
-
             // Act
             var userPaginatedDto = await
                 GetResponseMessageBodyAsync<Model.Dtos.PaginatedDto<TDto>>(
@@ -71,12 +71,12 @@ namespace PingYourPackage.API.Test.Integration.cs.TestHelpers
 
             return userPaginatedDto;
         }
+
         internal static async Task<TResult> GetResponseMessageBodyAsync<TResult>(
             HttpConfiguration config,
             HttpRequestMessage request,
             HttpStatusCode expectedHttpStatusCode)
         {
-
             var response = await GetResponseAsync(config, request);
             Assert.Equal(expectedHttpStatusCode, response.StatusCode);
             var result = await response.Content.ReadAsAsync<TResult>();
@@ -87,11 +87,9 @@ namespace PingYourPackage.API.Test.Integration.cs.TestHelpers
         internal static async Task<HttpResponseMessage> GetResponseAsync(
             HttpConfiguration config, HttpRequestMessage request)
         {
-
             using (var httpServer = new HttpServer(config))
             using (var client = HttpClientFactory.Create(innerHandler: httpServer))
             {
-
                 return await client.SendAsync(request);
             }
         }

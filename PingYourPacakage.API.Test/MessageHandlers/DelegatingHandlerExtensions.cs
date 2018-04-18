@@ -11,7 +11,7 @@ namespace PingYourPacakage.API.Test.MessageHandlers
 {
     internal static class DelegatingHandlerExtensions
     {
-        internal static Task<HttpResponseMessage> InvokeAsync(this DelegatingHandler handler, HttpRequestMessage request, CancellationToken cancellationToken = default(CancellationToken))
+        public static Task<HttpResponseMessage> InvokeAsync(this DelegatingHandler handler, HttpRequestMessage request, CancellationToken cancellationToken = default(CancellationToken))
         {
             handler.InnerHandler = new DummyHandler();
             var invoker = new HttpMessageInvoker(handler);
@@ -19,7 +19,7 @@ namespace PingYourPacakage.API.Test.MessageHandlers
         }
     }
 
-    internal class DummyHandler : HttpMessageHandler
+    public class DummyHandler : HttpMessageHandler
     {
         protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
         {

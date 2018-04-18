@@ -1,7 +1,5 @@
 namespace PingYourPackage.Domain.Migrations
 {
-    using Entities;
-    using Entities.Core;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
@@ -9,11 +7,9 @@ namespace PingYourPackage.Domain.Migrations
 
     internal sealed class Configuration : DbMigrationsConfiguration<PingYourPackage.Domain.Entities.Core.EntitiesContext>
     {
-
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-
         }
 
         protected override void Seed(PingYourPackage.Domain.Entities.Core.EntitiesContext context)
@@ -30,12 +26,6 @@ namespace PingYourPackage.Domain.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
-            context.Roles.AddOrUpdate(role => role.Name,
-                new Role { Key = Guid.NewGuid(), Name = "Admin" },
-                new Role { Key = Guid.NewGuid(), Name = "Employee" },
-                new Role { Key = Guid.NewGuid(), Name = "Affiliate" }
-                );
-
         }
     }
 }

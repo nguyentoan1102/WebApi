@@ -14,11 +14,7 @@ namespace PingYourPackage.Domain.Services
         private readonly IEntityRepository<Role> _roleRepository;
         private readonly IEntityRepository<UserInRole> _userInRoleRepository;
         private readonly ICryptoService _cryptoService;
-        public MembershipService(
-        IEntityRepository<User> userRepository,
-        IEntityRepository<Role> roleRepository,
-        IEntityRepository<UserInRole> userInRoleRepository,
-        ICryptoService cryptoService)
+        public MembershipService(IEntityRepository<User> userRepository, IEntityRepository<Role> roleRepository, IEntityRepository<UserInRole> userInRoleRepository, ICryptoService cryptoService)
         {
             _userRepository = userRepository;
             _roleRepository = roleRepository;
